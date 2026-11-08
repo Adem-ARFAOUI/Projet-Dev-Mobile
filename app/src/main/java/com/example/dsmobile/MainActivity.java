@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup rgMotif;
     private Button btnInspecter;
 
-    // Méthode statique exigée pour les clés de l'Intent
+    // méthode hethi feha le principe eli bch nab3eth fih les donnée men activité 1 lel activité 2
     public static String genererCle(String matricule, String cleBase) {
         return matricule + "_" + cleBase;
     }
@@ -27,18 +27,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Liaison avec les éléments graphiques en utilisant les IDs avec "_sh"
+        // Liaison xml avec en utilisant les IDs "_sh"
         etNom = findViewById(R.id.et_nom_sh);
         etAnneeNaissance = findViewById(R.id.et_annee_naissance_sh);
         etAnneeDestination = findViewById(R.id.et_annee_destination_sh);
         rgMotif = findViewById(R.id.rg_motif_sh);
         btnInspecter = findViewById(R.id.btn_inspecter_sh);
 
-        // Action lors du clic sur le bouton
+        // Action du clic de bouton
         btnInspecter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Récupération des textes saisis
+                // Récupération des textes saisis bch nab3thhom lel activité 2
                 String nom = etNom.getText().toString();
                 String anneeNaissanceStr = etAnneeNaissance.getText().toString();
                 String anneeDestinationStr = etAnneeDestination.getText().toString();
@@ -49,17 +49,17 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                // Récupération du motif sélectionné
+                // Récupération du bouton sélectionné
                 int selectedId = rgMotif.getCheckedRadioButtonId();
                 RadioButton rbSelected = findViewById(selectedId);
                 String motif = rbSelected.getText().toString();
 
-                // Création de l'Intent explicite vers VerificationActivity
+                // Création de l'Intent explicite vers VerificationActivity( fi 3oudh activity 2 khater mazelt matkhedmetch pour éviter les bug)
                 Intent intent = new Intent(MainActivity.this, VerificationActivity.class);
 
                 String matricule = "1234";
 
-                // Envoi des données avec les clés générées dynamiquement
+                // b3athet les donnée lel verificationactivity bel intent
                 intent.putExtra(genererCle(matricule, "NOM"), nom);
                 intent.putExtra(genererCle(matricule, "ANNEE_NAISSANCE"), Integer.parseInt(anneeNaissanceStr));
                 intent.putExtra(genererCle(matricule, "ANNEE_DESTINATION"), Integer.parseInt(anneeDestinationStr));
