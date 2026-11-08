@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/et_nom_sh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Nom du voyageur" />
+
+    <EditText
+        android:id="@+id/et_annee_naissance_sh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Année de naissance (ex: 1990)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/et_annee_destination_sh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Année de destination (ex: 2050)"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Motif de voyage :"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rg_motif_sh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_tourisme_sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tourisme"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rb_modification_sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modification du passé" />
+
+        <RadioButton
+            android:id="@+id/rb_fuite_sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fuite" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_inspecter_sh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Inspecter le profil" />
+
+</LinearLayout>
