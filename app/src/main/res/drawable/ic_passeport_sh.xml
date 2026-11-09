@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Image de la couverture du passeport (partie gauche, poids 0.3) :
+     fond bleu nuit, horloge dorée et ligne de perforation du billet -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="90dp"
+    android:height="200dp"
+    android:viewportWidth="90"
+    android:viewportHeight="200">
+
+    <!-- Fond bleu nuit -->
+    <path
+        android:fillColor="#1B2A49"
+        android:pathData="M0,0h90v200h-90z" />
+
+    <!-- Cadran de l'horloge -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M45,100m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0"
+        android:strokeColor="#D4AF37"
+        android:strokeWidth="4" />
+
+    <!-- Aiguille des minutes -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M45,100L45,80"
+        android:strokeColor="#D4AF37"
+        android:strokeLineCap="round"
+        android:strokeWidth="4" />
+
+    <!-- Aiguille des heures -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M45,100L58,108"
+        android:strokeColor="#D4AF37"
+        android:strokeLineCap="round"
+        android:strokeWidth="4" />
+
+    <!-- Petites étoiles décoratives -->
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M20,30m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M68,45m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M30,165m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M70,150m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+
+    <!-- Ligne de perforation à droite (effet billet) -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M88,0L88,200"
+        android:strokeColor="#F6EBD0"
+        android:strokeWidth="3">
+    </path>
+</vector>
