@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Activité 1 : formulaire d'enregistrement du voyageur.
+     ScrollView : le formulaire reste accessible en mode paysage ou avec le clavier ouvert. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Titre de l'écran -->
+        <TextView
+            android:id="@+id/tv_titre_sh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/titre_enregistrement"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Champ : nom du voyageur -->
+        <EditText
+            android:id="@+id/et_nom_sh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nom"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <!-- Champ : année de naissance (4 chiffres maximum) -->
+        <EditText
+            android:id="@+id/et_annee_naissance_sh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_annee_naissance"
+            android:inputType="number"
+            android:maxLength="4"
+            android:minHeight="48dp" />
+
+        <!-- Champ : année de destination (4 chiffres maximum) -->
+        <EditText
+            android:id="@+id/et_annee_destination_sh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_annee_destination"
+            android:inputType="number"
+            android:maxLength="4"
+            android:minHeight="48dp" />
+
+        <!-- Libellé au-dessus des boutons radio -->
+        <TextView
+            android:id="@+id/tv_motif_label_sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_motif"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Groupe de boutons radio : un seul motif peut être choisi -->
+        <RadioGroup
+            android:id="@+id/rg_motif_sh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Motif 1 : coché par défaut -->
+            <RadioButton
+                android:id="@+id/rb_tourisme_sh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/motif_tourisme" />
+
+            <!-- Motif 2 -->
+            <RadioButton
+                android:id="@+id/rb_modification_sh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/motif_modification" />
+
+            <!-- Motif 3 -->
+            <RadioButton
+                android:id="@+id/rb_fuite_sh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/motif_fuite" />
+        </RadioGroup>
+
+        <!-- Bouton qui lance l'Activité 2 -->
+        <Button
+            android:id="@+id/btn_inspecter_sh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_inspecter" />
+    </LinearLayout>
+</ScrollView>

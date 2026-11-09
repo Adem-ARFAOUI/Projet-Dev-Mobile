@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fond du billet : papier crème avec une bordure marron -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/billet_fond" />
+    <stroke
+        android:width="3dp"
+        android:color="@color/billet_bordure" />
+</shape>

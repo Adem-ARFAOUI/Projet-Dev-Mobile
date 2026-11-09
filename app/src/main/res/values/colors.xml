@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Couleurs du billet / passeport (Activité 2) -->
+    <color name="billet_fond">#FFF6EBD0</color>
+    <color name="billet_bordure">#FF8A6A2F</color>
+    <color name="billet_titre">#FF1B2A49</color>
+    <color name="billet_label">#FF7A6A4A</color>
+    <color name="billet_valeur">#FF2B2B2B</color>
+    <color name="billet_alerte">#FFB3261E</color>
+    <color name="billet_approuver">#FF2E7D32</color>
+    <color name="billet_refuser">#FFC62828</color>
+</resources>
