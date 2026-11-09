@@ -1,4 +1,5 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Douane Temporelle</string>
 
     <!-- Activité 1 : formulaire -->
@@ -28,3 +29,7 @@
     <string name="btn_refuser">Refuser (Risque de paradoxe)</string>
     <string name="voyageur_inconnu">Inconnu</string>
 </resources>
+=======
+    <string name="app_name">Ds Mobile</string>
+</resources>
+>>>>>>> origin/main

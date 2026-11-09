@@ -24,10 +24,14 @@
         <activity
             android:name=".VerificationActivity"
             android:exported="false"
+<<<<<<< HEAD
             android:screenOrientation="portrait" />
         <activity
             android:name=".ResultActivity"
             android:exported="false" />
+=======
+            android:windowSoftInputMode="adjustResize" />
+>>>>>>> origin/main
     </application>
 
 </manifest>
