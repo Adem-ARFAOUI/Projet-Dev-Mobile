@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Couverture du passeport temporel (partie gauche de l'Activité 2, poids 0.3) :
+     fond bleu nuit dégradé, filets dorés, horloge, sablier, étoiles
+     et petites encoches de perforation sur le bord droit (effet billet). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="90dp"
+    android:height="600dp"
+    android:viewportWidth="90"
+    android:viewportHeight="600">
+
+    <!-- Fond : dégradé vertical bleu nuit -->
+    <path android:pathData="M0,0h90v600h-90z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="0" android:startY="0" android:endX="0" android:endY="600" android:type="linear">
+                <item android:color="#FF22365E" android:offset="0.0" />
+                <item android:color="#FF0E1830" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Filets, anneaux, graduations, aiguilles et ornements (traits dorés), puis formes dorées et encoches -->
+    <path android:strokeColor="#D4AF37" android:strokeAlpha="0.9" android:strokeWidth="1.4" android:strokeLineCap="round"
+        android:pathData="M11,0L11,600M79,0L79,600" />
+    <path android:strokeColor="#D4AF37" android:strokeAlpha="0.55" android:strokeWidth="0.7" android:strokeLineCap="round"
+        android:pathData="M15,0L15,600M75,0L75,600" />
+    <path android:strokeColor="#D4AF37" android:strokeAlpha="0.95" android:strokeWidth="1.6" android:strokeLineCap="round"
+        android:pathData="M14,300a31,31 0 1,0 62,0a31,31 0 1,0 -62,0" />
+    <path android:strokeColor="#D4AF37" android:strokeAlpha="0.6" android:strokeWidth="0.7" android:strokeLineCap="round"
+        android:pathData="M17.5,300a27.5,27.5 0 1,0 55,0a27.5,27.5 0 1,0 -55,0" />
+    <path android:strokeColor="#D4AF37" android:strokeAlpha="0.45" android:strokeWidth="0.7" android:strokeLineCap="round"
+        android:pathData="M33,300a12,12 0 1,0 24,0a12,12 0 1,0 -24,0" />
+    <path android:strokeColor="#D4AF37" android:strokeAlpha="0.9" android:strokeWidth="1.5" android:strokeLineCap="round"
+        android:pathData="M45,272.5L45,278.5M72.5,300L66.5,300M45,327.5L45,321.5M17.5,300L23.5,300" />
+    <path android:strokeColor="#D4AF37" android:strokeAlpha="0.9" android:strokeWidth="0.8" android:strokeLineCap="round"
+        android:pathData="M58.8,276.2L57,279.2M68.8,286.2L65.8,288M68.8,313.8L65.8,312M58.8,323.8L57,320.8M31.2,323.8L33,320.8M21.2,313.8L24.2,312M21.2,286.2L24.2,288M31.2,276.2L33,279.2" />
+    <path android:strokeColor="#D4AF37" android:strokeAlpha="1" android:strokeWidth="2.2" android:strokeLineCap="round"
+        android:pathData="M45,300L45,280" />
+    <path android:strokeColor="#D4AF37" android:strokeAlpha="1" android:strokeWidth="2.6" android:strokeLineCap="round"
+        android:pathData="M45,300L56,307" />
+    <path android:fillColor="#F3DFA2" android:fillAlpha="1"
+        android:pathData="M41.8,300a3.2,3.2 0 1,0 6.4,0a3.2,3.2 0 1,0 -6.4,0" />
+    <path android:fillColor="#D4AF37" android:fillAlpha="1"
+        android:pathData="M45,260.4L47.6,263L45,265.6L42.4,263zM45,334.4L47.6,337L45,339.6L42.4,337zM45,112L47.8,119.2L55,122L47.8,124.8L45,132L42.2,124.8L35,122L42.2,119.2zM45,149.4L47.6,152L45,154.6L42.4,152zM45,445.4L47.6,448L45,450.6L42.4,448z" />
+    <path android:fillColor="#D4AF37" android:fillAlpha="0.9"
+        android:pathData="M33,90.5L34.5,92L33,93.5L31.5,92zM45,89.8L47.2,92L45,94.2L42.8,92zM57,90.5L58.5,92L57,93.5L55.5,92zM33,518.5L34.5,520L33,521.5L31.5,520zM45,517.8L47.2,520L45,522.2L42.8,520zM57,518.5L58.5,520L57,521.5L55.5,520z" />
+    <path android:strokeColor="#D4AF37" android:strokeAlpha="0.7" android:strokeWidth="0.8" android:strokeLineCap="round"
+        android:pathData="M24,152L40,152M50,152L66,152M24,448L40,448M50,448L66,448" />
+    <path android:strokeColor="#D4AF37" android:strokeAlpha="1" android:strokeWidth="1.6" android:strokeLineCap="round"
+        android:pathData="M35,466L55,466M35,498L55,498" />
+    <path android:fillColor="#D4AF37" android:fillAlpha="0.95"
+        android:pathData="M37,466L53,466L45,482Z" />
+    <path android:fillColor="#D4AF37" android:fillAlpha="0.55"
+        android:pathData="M45,482L53,498L37,498Z" />
+    <path android:fillColor="#F3DFA2" android:fillAlpha="0.8"
+        android:pathData="M22.9,205a1.1,1.1 0 1,0 2.2,0a1.1,1.1 0 1,0 -2.2,0M61.9,355a1.1,1.1 0 1,0 2.2,0a1.1,1.1 0 1,0 -2.2,0" />
+    <path android:fillColor="#F3DFA2" android:fillAlpha="0.6"
+        android:pathData="M65.1,225a0.9,0.9 0 1,0 1.8,0a0.9,0.9 0 1,0 -1.8,0M25.1,385a0.9,0.9 0 1,0 1.8,0a0.9,0.9 0 1,0 -1.8,0" />
+    <path android:fillColor="#F3DFA2" android:fillAlpha="0.5"
+        android:pathData="M27.2,262a0.8,0.8 0 1,0 1.6,0a0.8,0.8 0 1,0 -1.6,0M59.2,410a0.8,0.8 0 1,0 1.6,0a0.8,0.8 0 1,0 -1.6,0M21.2,185a0.8,0.8 0 1,0 1.6,0a0.8,0.8 0 1,0 -1.6,0" />
+    <path android:fillColor="#D4AF37" android:fillAlpha="0.8"
+        android:pathData="M20,234.5L21,237L23.5,238L21,239L20,241.5L19,239L16.5,238L19,237zM70,386.5L71,389L73.5,390L71,391L70,393.5L69,391L66.5,390L69,389z" />
+    <path android:fillColor="#D4AF37" android:fillAlpha="0.7"
+        android:pathData="M68,177L68.8,179.2L71,180L68.8,180.8L68,183L67.2,180.8L65,180L67.2,179.2zM22,417L22.8,419.2L25,420L22.8,420.8L22,423L21.2,420.8L19,420L21.2,419.2z" />
+    <path android:fillColor="#F6EBD0" android:fillAlpha="1"
+        android:pathData="M86,30a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,54a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,78a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,102a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,126a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,150a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,174a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,198a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,222a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,246a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,270a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,294a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,318a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,342a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,366a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,390a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,414a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,438a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,462a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,486a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,510a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,534a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,558a4,4 0 1,0 8,0a4,4 0 1,0 -8,0M86,582a4,4 0 1,0 8,0a4,4 0 1,0 -8,0" />
+</vector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Teinte du bouton "Approuver" selon son état :
+     gris quand il est désactivé (risque de paradoxe), vert sinon. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/billet_desactive" android:state_enabled="false" />
+    <item android:color="@color/billet_approuver" />
+</selector>

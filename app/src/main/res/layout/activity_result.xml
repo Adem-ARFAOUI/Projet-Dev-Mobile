@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Activité 3 : écran du verdict.
+     La couleur de fond du LinearLayout racine yetbadel fi le code Java
+     (vert si approuvé, rouge si refusé). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_result_ad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".ResultActivity">
+
+    <!-- Grand symbole du verdict (✔ walla !) w yet7at men code Java -->
+    <TextView
+        android:id="@+id/tv_symbole_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="96sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Titre du verdict : approuvé ou refusé -->
+    <TextView
+        android:id="@+id/tv_titre_verdict_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Message personnalisé fih le nom du voyageur -->
+    <TextView
+        android:id="@+id/tv_message_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="26sp" />
+
+    <!-- traj3ek lel formulaire w tsaker les activités précédentes -->
+    <Button
+        android:id="@+id/btn_nouveau_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="@string/btn_nouveau_voyageur"
+        android:textColor="@color/black" />
+</LinearLayout>

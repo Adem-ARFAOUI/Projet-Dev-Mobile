@@ -1,26 +1,16 @@
 package com.example.dsmobile;
 
-<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-=======
-import android.os.Bundle;
->>>>>>> origin/main
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-<<<<<<< HEAD
 /**
- * Activité 2 : le scanner de paradoxe.
- * Elle affiche le résumé du voyageur sous forme de billet / passeport
- * et permet d'approuver ou de refuser le saut temporel.
+ Activité 2 : le scanner de paradoxe.
+ Twika bch nafichiw le résumé du voyageur sous forme de billet wala passeport (Mr brsmy 7awelt njibha kima passeport ama ala8lb adheka li tl3li et merci :D )
+ w mb3ed l voyageur ya5tar enou yapprouvi wala yrefusi le saut temporel.
  */
 public class VerificationActivity extends AppCompatActivity {
 
@@ -29,38 +19,24 @@ public class VerificationActivity extends AppCompatActivity {
     private int anneeNaissance;
     private int anneeDestination;
     private String motif;
-
-=======
-public class VerificationActivity extends AppCompatActivity {
-
->>>>>>> origin/main
+    // nfs remarque fi activity_main
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_verification);
-<<<<<<< HEAD
 
-        // Ajout d'une marge pour ne pas passer sous la barre d'état / de navigation
-=======
->>>>>>> origin/main
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-<<<<<<< HEAD
+        // Twika bch norbtou binet layout xml w bch n7otou fehom les infos elli jeyin mn activité1
+        // IDs avec les initiales "ia" pour dire Imen Abed
+        // 5ter hia 5demt activité 2 .
+        TextView tvValeurNomIa = findViewById(R.id.tv_valeur_nom_ia);
+        TextView tvValeurAgeIa = findViewById(R.id.tv_valeur_age_ia);
+        TextView tvValeurAneesIa = findViewById(R.id.tv_valeur_annees_ia);
+        TextView tvValeurMotifIa = findViewById(R.id.tv_valeur_motif_ia);
+        TextView tvAlerteIa = findViewById(R.id.tv_alerte_ia);
+        Button btnApprouverIa = findViewById(R.id.btn_approuver_ia);
+        Button btnRefuserIa = findViewById(R.id.btn_refuser_ia);
 
-        // Liaison avec les éléments du layout (IDs avec les initiales "sh")
-        TextView tvValeurNomSh = findViewById(R.id.tv_valeur_nom_sh);
-        TextView tvValeurAgeSh = findViewById(R.id.tv_valeur_age_sh);
-        TextView tvValeurAneesSh = findViewById(R.id.tv_valeur_annees_sh);
-        TextView tvValeurMotifSh = findViewById(R.id.tv_valeur_motif_sh);
-        TextView tvAlerteSh = findViewById(R.id.tv_alerte_sh);
-        Button btnApprouverSh = findViewById(R.id.btn_approuver_sh);
-        Button btnRefuserSh = findViewById(R.id.btn_refuser_sh);
-
-        // Récupération des données avec les clés construites par la méthode statique
+        // Récupération des données avec les clés construites par la méthode statique elli fi class cles.
         Intent intent = getIntent();
         nom = intent.getStringExtra(Cles.genererCle(Cles.MATRICULE, Cles.NOM_VOYAGEUR));
         anneeNaissance = intent.getIntExtra(Cles.genererCle(Cles.MATRICULE, Cles.ANNEE_NAISSANCE), 0);
@@ -75,35 +51,36 @@ public class VerificationActivity extends AppCompatActivity {
             motif = "";
         }
 
-        // Âge temporel = âge que le voyageur aura à l'année de destination
+        // Âge temporel = âge que le voyageur aura - l'année de destination
         int ageTemporel = anneeDestination - anneeNaissance;
 
         // Affichage du résumé sur le billet
-        tvValeurNomSh.setText(nom);
-        tvValeurAgeSh.setText(getString(R.string.valeur_age_temporel, ageTemporel));
-        tvValeurAneesSh.setText(getString(R.string.valeur_naissance_destination,
-                anneeNaissance, anneeDestination));
-        tvValeurMotifSh.setText(motif);
+        tvValeurNomIa.setText(nom);
+        tvValeurAgeIa.setText(getString(R.string.valeur_age_temporel, ageTemporel));
+        tvValeurAneesIa.setText(getString(R.string.valeur_naissance_destination, anneeNaissance, anneeDestination));
+        tvValeurMotifIa.setText(motif);
 
-        // Règle : motif "Modification du passé" ET différence d'années première
-        // => le bouton Approuver est désactivé dès le chargement de l'activité
+
+        // twika bch nchoufou ken la différence bin age  w années destination est un nb premier :
+        // w9tha le bouton Approuver est désactivé dès le chargement de l'activité
         boolean modificationDuPasse = motif.equals(getString(R.string.motif_modification));
         boolean risqueParadoxe = modificationDuPasse && estPremier(Math.abs(ageTemporel));
 
         if (risqueParadoxe) {
-            btnApprouverSh.setEnabled(false);
-            tvAlerteSh.setVisibility(View.VISIBLE);
+            btnApprouverIa.setEnabled(false);
+            tvAlerteIa.setVisibility(View.VISIBLE);
         }
 
-        // Clic sur "Approuver" : verdict = true
-        btnApprouverSh.setOnClickListener(v -> envoyerVerdict(true));
+        // ki yeclici 3ala bouton "approuvé" : verdict = true
+        btnApprouverIa.setOnClickListener(v -> envoyerVerdict(true));
 
-        // Clic sur "Refuser" : verdict = false
-        btnRefuserSh.setOnClickListener(v -> envoyerVerdict(false));
+        // ki yeclici 3ala bouton "refusé" : verdict = false
+        btnRefuserIa.setOnClickListener(v -> envoyerVerdict(false));
     }
 
     /**
-     * Lance l'Activité 3 avec le verdict (booléen) et le nom du voyageur.
+     kif ma 3amlna fel activité 1 twika bch nb3thou l verdict w nom de voyageur lel activité 3
+     à travers un Intent explicite.
      */
     private void envoyerVerdict(boolean verdict) {
         Intent intent = new Intent(VerificationActivity.this, ResultActivity.class);
@@ -112,15 +89,13 @@ public class VerificationActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    /**
-     * Teste si un nombre est premier (divisions jusqu'à la racine carrée).
-     * 0 et 1 ne sont pas premiers.
-     */
+    // hadhy l fonction elli etasti si un nombre et premier ou pas
+    // 0 w 1 ne sont mayet7sbouch par définition
     private boolean estPremier(int n) {
         if (n < 2) {
             return false;
         }
-        for (int i = 2; (long) i * i <= n; i++) {
+        for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
                 return false;
             }
@@ -128,7 +103,3 @@ public class VerificationActivity extends AppCompatActivity {
         return true;
     }
 }
-=======
-    }
-}
->>>>>>> origin/main
