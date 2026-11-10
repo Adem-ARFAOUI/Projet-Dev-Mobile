@@ -1,5 +1,5 @@
 <resources>
-<<<<<<< HEAD
+
     <string name="app_name">Douane Temporelle</string>
 
     <!-- Activité 1 : formulaire -->
@@ -28,8 +28,11 @@
     <string name="btn_approuver">Approuver le saut temporel</string>
     <string name="btn_refuser">Refuser (Risque de paradoxe)</string>
     <string name="voyageur_inconnu">Inconnu</string>
+
+    <!-- Activité 3 : verdict -->
+    <string name="titre_verdict_approuve">SAUT TEMPOREL APPROUVÉ</string>
+    <string name="titre_verdict_refuse">SAUT TEMPOREL REFUSÉ</string>
+    <string name="message_approuve">Bon voyage %1$s</string>
+    <string name="message_refuse">%1$s est en état d\'arrestation temporelle</string>
+    <string name="btn_nouveau_voyageur">Nouveau voyageur</string>
 </resources>
-=======
-    <string name="app_name">Ds Mobile</string>
-</resources>
->>>>>>> origin/main

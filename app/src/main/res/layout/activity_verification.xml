@@ -1,44 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<!-- Activité 2 : scanner de paradoxe, présenté comme un billet / passeport.
-     Contrainte de l'énoncé : LinearLayout horizontal racine contenant
-     à gauche une image (poids 0.3) et à droite un RelativeLayout (poids 0.7). -->
+<!-- Activité 2 : scanner de paradoxe, bch nafichiw le résumé du voyageur sous forme de billet wala passeport
+(Mr brsmy 7awelt njibha kima passeport ama ala8lb adheka li tl3li et merci :D )
+ahyka LinearLayout horizontal racine feha à gauche une image (poids 0.3)
+w à droite un RelativeLayout (poids 0.7) kima t7ab enty.
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-=======
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
->>>>>>> origin/main
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/main_sh"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     android:orientation="horizontal"
     android:weightSum="1"
     tools:context=".VerificationActivity">
 
     <!-- Partie gauche (poids 0.3) : image de la couverture -->
     <ImageView
-        android:id="@+id/img_passeport_sh"
+        android:id="@+id/img_passeport_ia"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.3"
         android:contentDescription="@string/titre_passeport"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_passeport_sh" />
+        android:src="@drawable/ic_passeport_ia" />
 
     <!-- Partie droite (poids 0.7) : textes et boutons du billet -->
     <RelativeLayout
-        android:id="@+id/rl_billet_sh"
+        android:id="@+id/rl_billet_ia"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.7"
-        android:background="@drawable/bg_billet_sh"
+        android:background="@drawable/bg_billet_ia"
         android:padding="16dp">
 
         <!-- Titre du billet -->
         <TextView
-            android:id="@+id/tv_titre_passeport_sh"
+            android:id="@+id/tv_titre_passeport_ia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -50,90 +46,90 @@
 
         <!-- Nom du voyageur : libellé puis valeur -->
         <TextView
-            android:id="@+id/tv_label_nom_sh"
+            android:id="@+id/tv_label_nom_ia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_titre_passeport_sh"
+            android:layout_below="@id/tv_titre_passeport_ia"
             android:layout_marginTop="20dp"
             android:text="@string/label_voyageur"
             android:textColor="@color/billet_label"
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/tv_valeur_nom_sh"
+            android:id="@+id/tv_valeur_nom_ia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_label_nom_sh"
+            android:layout_below="@id/tv_label_nom_ia"
             android:textColor="@color/billet_valeur"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <!-- Âge temporel calculé : libellé puis valeur -->
         <TextView
-            android:id="@+id/tv_label_age_sh"
+            android:id="@+id/tv_label_age_ia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_valeur_nom_sh"
+            android:layout_below="@id/tv_valeur_nom_ia"
             android:layout_marginTop="12dp"
             android:text="@string/label_age_temporel"
             android:textColor="@color/billet_label"
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/tv_valeur_age_sh"
+            android:id="@+id/tv_valeur_age_ia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_label_age_sh"
+            android:layout_below="@id/tv_label_age_ia"
             android:textColor="@color/billet_valeur"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <!-- Années de naissance et de destination -->
         <TextView
-            android:id="@+id/tv_label_annees_sh"
+            android:id="@+id/tv_label_annees_ia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_valeur_age_sh"
+            android:layout_below="@id/tv_valeur_age_ia"
             android:layout_marginTop="12dp"
             android:text="@string/label_naissance_destination"
             android:textColor="@color/billet_label"
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/tv_valeur_annees_sh"
+            android:id="@+id/tv_valeur_annees_ia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_label_annees_sh"
+            android:layout_below="@id/tv_label_annees_ia"
             android:textColor="@color/billet_valeur"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <!-- Motif du voyage -->
         <TextView
-            android:id="@+id/tv_label_motif_sh"
+            android:id="@+id/tv_label_motif_ia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_valeur_annees_sh"
+            android:layout_below="@id/tv_valeur_annees_ia"
             android:layout_marginTop="12dp"
             android:text="@string/label_motif_billet"
             android:textColor="@color/billet_label"
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/tv_valeur_motif_sh"
+            android:id="@+id/tv_valeur_motif_ia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_label_motif_sh"
+            android:layout_below="@id/tv_label_motif_ia"
             android:textColor="@color/billet_valeur"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <!-- Message d'alerte : visible seulement si le bouton Approuver est bloqué -->
+        <!-- Message d'alerte : visible ken ki yabda le bouton Approuver bloqué -->
         <TextView
-            android:id="@+id/tv_alerte_sh"
+            android:id="@+id/tv_alerte_ia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_valeur_motif_sh"
+            android:layout_below="@id/tv_valeur_motif_ia"
             android:layout_marginTop="16dp"
             android:text="@string/alerte_paradoxe"
             android:textColor="@color/billet_alerte"
@@ -143,7 +139,7 @@
 
         <!-- Boutons en bas du billet -->
         <Button
-            android:id="@+id/btn_refuser_sh"
+            android:id="@+id/btn_refuser_ia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -152,17 +148,12 @@
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/btn_approuver_sh"
+            android:id="@+id/btn_approuver_ia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@id/btn_refuser_sh"
-            android:backgroundTint="@color/billet_approuver"
+            android:layout_above="@id/btn_refuser_ia"
+            android:backgroundTint="@color/billet_approuver_tint"
             android:text="@string/btn_approuver"
             android:textColor="@color/white" />
     </RelativeLayout>
 </LinearLayout>
-=======
-    tools:context=".VerificationActivity">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> origin/main

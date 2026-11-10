@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-<<<<<<< HEAD
+
 
     <!-- Couleurs du billet / passeport (Activité 2) -->
     <color name="billet_fond">#FFF6EBD0</color>
@@ -13,7 +13,10 @@
     <color name="billet_alerte">#FFB3261E</color>
     <color name="billet_approuver">#FF2E7D32</color>
     <color name="billet_refuser">#FFC62828</color>
+    <color name="billet_desactive">#FF9E9E9E</color>
+
+    <!-- Couleurs de fond de l'Activité 3 (verdict) -->
+    <color name="verdict_approuve">#FF2E7D32</color>
+    <color name="verdict_refuse">#FFC62828</color>
 </resources>
-=======
-</resources>
->>>>>>> origin/main
+
